@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="reg-wrapper">
+    <div class="reg-container" id="reg">
+        <div class="heading">Регистрация</div>
+        <form class="form" action="">
+            <input
+                placeholder="Фамилия"
+                id="surname"
+                name="surname"
+                type="text"
+                class="input"
+                required=""
+            />
+            <input
+                placeholder="Имя"
+                id="name"
+                name="name"
+                type="text"
+                class="input"
+                required=""
+            />
+            <input
+                placeholder="Отчество"
+                id="third_name"
+                name="third_name"
+                type="text"
+                class="input"
+                required=""
+            />            
+            <input
+                placeholder="Username"
+                id="username"
+                name="username"
+                type="text"
+                class="input"
+                required=""
+            />
+            <input
+                placeholder="Пароль"
+                id="password"
+                name="password"
+                type="password"
+                class="input"
+                required=""
+            />
+
+            <input value="Зарегистрироваться" type="submit" class="login-button" />
+        </form>
+        <div class="form-footer">Уже усть аккаунт? <a id="link" class="form_footer_link">Войти</a></div>
+    </div>
+    <div class="reg-container hide" id="signin">
+        <div class="heading">Вход</div>
+        <form class="form" action="">
+            <input
+                placeholder="Username"
+                id="signin_username"
+                name="username"
+                type="text"
+                class="input"
+                required=""
+            />
+            <input
+                placeholder="Пароль"
+                id="signin_password"
+                name="password"
+                type="password"
+                class="input"
+                required=""
+            />
+            <input value="Войти" asp-controller="Home" asp-action="Test"
+                   type="submit" class="login-button" />
+        </form>
+        <div class="form-footer">Нет аккаунта? <a id="reg_link" class="form_footer_link">Регистрация</a></div>
+    </div>
+</div>
+
